@@ -2,5 +2,11 @@
   "name": "worksample-ov",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.14.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
 }
