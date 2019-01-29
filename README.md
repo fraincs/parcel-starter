@@ -13,11 +13,11 @@ Via NPM
 
 > parcel index.html
 
-FAQ
+## FAQ ##
 Where do I add my SASS files?
 
 In the /sass folder
 
-How do I import more SASS files
+## How do I import more SASS files ##
 
 Import them in index.js
