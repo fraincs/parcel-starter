@@ -13,16 +13,16 @@
     margin: 0 auto
 }
 
-    // margin all 0
+// margin all 0
 .ma0 {
     margin: 0;
 }
-    // padding all 0
+// padding all 0
 .pa0 {
     padding: 0;
 }
 
-// widths
+// widths in %
 .w-100 {
     width: 100%;
 }
@@ -52,6 +52,7 @@
 }
 
 // max-widths
+// 1st step in the max width scale @todo add more max widths to the scale
 .mw1 {
     max-width: 1100px;
 }
@@ -96,4 +97,8 @@
 
 .list {
     list-style-type: none;
+}
+
+.no-underline {
+    text-decoration: none;
 }
