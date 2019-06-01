@@ -1,0 +1,12 @@
+// Footer
+.footer {
+    background: black;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.footer__socials {
+    li {
+        margin-right: $gutter-width * 4;
+    }
+}

@@ -1,0 +1,11 @@
+// Action
+.action {
+    margin-left: $gutter-width;
+    cursor: pointer;
+
+    span {
+        &::before {
+            content: attr(data-count);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+// Btn
+.btn {
+    display: inline-block;
+    background-color: $primary-color;
+    color: $white-color;
+    text-decoration: none;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn--large {
+    padding: 7.5px 24px 9.5px;
+    font-size: $base-font-size * 1.25;
+    min-width: 150px;
+}
+
+.btn--small {
+    padding: 5px 16px 8px;
+    font-size: $base-font-size;
+    min-width: 114px;
+}

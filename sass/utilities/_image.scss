@@ -1,0 +1,25 @@
+// Image utilities
+.full-width-image {
+    display: block;
+    max-width: 100%;
+}
+
+.ratio-16-9 {
+    padding-bottom: 56.25%;
+}
+
+.ratio-8-5 {
+    padding-bottom: 62.5%;
+}
+
+.ratio-4-3 {
+    padding-bottom: 75%;
+}
+
+.ratio-3-2 {
+    padding-bottom: 66.66%;
+}
+
+.ratio-1-1 {
+    padding-bottom: 100%;
+}

@@ -1,0 +1,16 @@
+// Header
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding-top: $gutter-width * 3;
+    padding-bottom: $gutter-width * 3;
+}
+
+.header__nav {
+    li {
+        margin-left: $gutter-width * 4;
+    }
+}

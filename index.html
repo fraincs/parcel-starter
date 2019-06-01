@@ -1,78 +1,393 @@
 <html>
     <head>
-        <title>Title</title>
+        <!-- Priority tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        
+        <!-- Document title and description-->
+        <title>Odigo | Plan efficiently your next trip to Japan</title>
+        <meta name="description" content="Travel agency for companies wishing to explore the Japanese market">
+        
+        <!-- Open Graph -->
+        <meta property="og:image" content=""> 
+        <meta property="og:site_name" content="Odigo">    
+        <meta property="og:title" content="Plan efficiently your next trip to Japan"> 
+        <meta property="og:description" content="Travel agency for companies wishing to explore the Japanese market"> 
+        <meta property="og:type"  content="website">                      
+        <meta property="og:url" content="">
+        
+        <!-- Twitter Meta Tags. -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:title" content="Odigo">
+        <meta name="twitter:description" content="Travel agency for companies wishing to explore the Japanese market">
+        <meta name="twitter:image" content="">
+
+        <!-- Favicon Meta Tags. -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#102746">
+        <link rel="shortcut icon" href="./images/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#102746">
+        <meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Google Analytics. -->
+        <!-- <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-XXXXXXXX-XX']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '//www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script> -->
+
+        <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     </head>
 <body>
-    <div class="header">
+    <!-- Header -->
+    <header class="header">
         <div class="mw1 center">
-            <div class="flex justify-between w-100">
+            <div class="header__nav flex justify-between">
                 <a href="#">
                     <img src="images/odigo-logo.svg" alt="">
                 </a>
-                <nav>
-                    <ul class="ma0 pa0 flex">
+                <nav class="header_nav">
+                    <ul class="ma0 pa0 flex align-center">
                         <li class="list white">Pricing</li>
                         <li class="list white">Features</li>
                         <li class="list white">Login</li>
-                        <li class="list white">Get Started</li>
+                        <li class="list white"><a href="#" class="btn btn--small">Get Started</a></li>
                     </ul>
                 </nav>
             </div>
-            <h1 class="white">Plan efficiently your next trip to Japan</h1>
-            <p class="white">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euism.</p>
-            <input type="text" placeholder="Enter your email">
-            <a class="bg-blue white ttu">Get Started</a>
         </div>
-    </div>
-    <div class="mw1 center">
-        <div class="vote flex">
-            <div class="flex justify-between w-33 vote-banner bg-black">
-                <p class="white ma0 pa0">NAGOYA</p>
-                <div class="vote-heart">
-                    <span data-likes="221" class="white"></span>
-                    <img src="images/heart.svg" data-heart>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero bg-overlay bg-overlay--gradient flex align-center">
+            <div class="mw1 center">
+                <div class="w-50">
+                    <h1 class="h1 white">Plan efficiently your next trip to Japan</h1>
+                    <p class="p white mt2">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euism.</p>
+                    <form action="" class="mt3">
+                        <div class="flex">
+                            <div class="input">
+                                <label>Enter your email</label>
+                                <input type="email" class="mt1" required>
+                            </div>
+                            <button class="btn btn--large mt2">Get Started</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="flex justify-between w-33 vote-banner bg-black">
-                <p class="white ma0 pa0">Niigata</p>
-                <div class="vote-heart">
-                    <span data-likes="221" class="white"></span>
-                    <img src="images/heart.svg" data-heart>
+        </section>
+
+        <!-- Benefits -->
+        <section class="flex align-center mt4">
+            <div class="mw1 center">
+                <h2 class="h2 text-center">Plan less, travel more</h2>
+                <div class="flex align-center mt4">
+                    <div class="w-33 text-center">
+                        <img src="images/benefit1.svg" alt="" class="center" />
+                        <h3 class="h4">Benefit 1</h3>
+                        <p class="p">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend la.</p>
+                    </div>
+                    <div class="w-33 text-center">
+                        <img src="images/benefit2.svg" alt="" class="center" />
+                        <h3 class="h4">Benefit 2</h3>
+                        <p class="p">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend la.</p>
+                    </div>
+                    <div class="w-33 text-center">
+                        <img src="images/benefit3.svg" alt="" class="center" />
+                        <h3 class="h4">Benefit 3</h3>
+                        <p class="p">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend la.</p>
+                    </div>
                 </div>
             </div>
-            <div class="flex justify-between w-33 vote-banner bg-black">
-                <p class="white ma0 pa0">Osaka</p>
-                <div class="vote-heart">
-                    <span data-likes="221" class="white"></span>
-                    <img src="images/heart.svg" data-heart>
-                    <img src="images/comment.svg" data-heart>
+        </section>
+
+        <!-- Feature1 -->
+        <section class="flex align-center mt4">
+            <div class="mw1 center">
+                <div class="flex align-center">
+                    <div class="w-50">
+                        <img src="images/feature.png" alt=""class="full-width-image" />
+                    </div>
+                    <div class="w-50">
+                        <h3 class="h3">Feature 1 vivamus adipiscing fermentum quam volutpat</h3>
+                        <p class="h4 mt1">
+                            “Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
+                            erat a elementum rutrum, neque sem pretium metus, 
+                            quis mollis nisl nunc et massa. Donec viverra eleifend la.”
+                        </p>
+                        <div class="flex mt1">
+                            <div>
+                                <img src="images/justin-wong.png" alt="Picture of Justin Wong" />
+                            </div>
+                            <div>
+                                <h4 class="h4">Justin Wong</h4>
+                                <p>Digital nomad</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Feature2 -->
+        <section class="flex align-center mt4">
+            <div class="mw1 center">
+                <div class="flex direction-row-reversed align-center">
+                    <div class="w-50">
+                        <img src="images/feature-2.png" alt=""class="full-width-image" />
+                    </div>
+                    <div class="w-50">
+                        <h3 class="h3">Feature 2 vivamus adipiscing fermentum quam volutpat</h3>
+                        <p class="h4 mt1">
+                            “Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
+                            erat a elementum rutrum, neque sem pretium metus, 
+                            quis mollis nisl nunc et massa. Donec viverra eleifend la.”
+                        </p>
+                        <div class="flex mt1">
+                            <div>
+                                <img src="images/alexis-beesly.png" alt="Picture of Alexis Beesly" />
+                            </div>
+                            <div>
+                                <h4 class="h4">Alexis Beesly</h4>
+                                <p>Yoga Teacher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video -->
+        <section class="bg-overlay bg-overlay--primary flex justify-center align-center full-section mt4" style="background-image: url('images/video-bg.jpg');">
+            <a href="#" class="text-center white no-underline">
+                <img src="images/play-button.svg" alt="" class="center" />
+                <p>See how it works</p>
+            </a>
+        </section>
+
+        <!-- Inspiration -->
+        <section class="mt4">
+            <div class="mw1 center">
+                <div class="flex justify-between align-center">
+                    <div>
+                        <h2 class="h2">Get inspired for your next trip</h2>
+                    </div>
+                    <div>
+                        <a href="#" class="link">View more</a>
+                    </div>
+                </div>
+                <div class="flex mt4">
+                    <div class="w-50">
+                        <div class="bg-overlay bg-overlay--secondary ratio-16-9" style="background-image: url('images/mount-fuji.jpg')">
+                            <h3 class="h1 white bg-overlay__title">Mount Fuji</h3>
+                        </div>
+                    </div>
+                    <div class="w-50">
+                        <div class="bg-overlay bg-overlay--secondary ratio-16-9" style="background-image: url('images/kyoto.jpg')">
+                            <h3 class="h1 white bg-overlay__title">Kyoto</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="w-33">
+                        <div class="bg-overlay bg-overlay--secondary ratio-3-2" style="background-image: url('images/tokyo.jpg')">
+                            <h3 class="h1 white bg-overlay__title">Tokyo</h3>
+                        </div>
+                    </div>
+                    <div class="w-33">
+                        <div class="bg-overlay bg-overlay--secondary ratio-3-2" style="background-image: url('images/niigata.jpg')">
+                            <h3 class="h1 white bg-overlay__title">Niigata</h3>
+                        </div>
+                    </div>
+                    <div class="w-33">
+                        <div class="bg-overlay bg-overlay--secondary ratio-3-2" style="background-image: url('images/sapporo.jpg')">
+                            <h3 class="h1 white bg-overlay__title">Sapporo</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn -->
+        <section>
+            <div class="mw1 center">
+                <div class="flex justify-between align-center">
+                    <div>
+                        <h2 class="h2">Learn about Japan</h2>
+                    </div>
+                    <div>
+                        <a href="#" class="link">View more</a>
+                    </div>
+                </div>
+                <div class="flex mt4">
+                    <div class="w-33">
+                        <div class="thumbnail">
+                            <div class="thumbnail__image">
+                                <img src="images/nagoya.jpg" alt="" />
+                                <div class="thumbnail__actions justify-between">
+                                    <div>
+                                        <h3 class="p white text-uppercase">nagoya</h3>
+                                    </div>
+                                    <div>
+                                        <div class="action">
+                                            <span data-count="0" class="white"></span>
+                                            <img src="images/heart.svg">
+                                        </div>
+                                        <div class="action">
+                                            <span data-count="0" class="white"></span>
+                                            <img src="images/comment.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>              
+                            <p class="mt2">
+                                Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.
+                                Quisque volutpat augue enim, 
+                                pulvinar lobortis nibh lacinia at. Vestibulum.
+                            </p>
+                            <a href="#" class="btn btn--small mt2">See full article</a>
+                        </div>
+                    </div>
+                    <div class="w-33">
+                        <div class="thumbnail">
+                            <div class="thumbnail__image">
+                                <img src="images/niigata-square.jpg" alt="" />
+                                <div class="thumbnail__actions justify-between">
+                                    <div>
+                                        <h3 class="p white text-uppercase">Niigata</h3>
+                                    </div>
+                                    <div>
+                                        <div class="action">
+                                            <span data-count="0" class="white"></span>
+                                            <img src="images/heart.svg">
+                                        </div>
+                                        <div class="action">
+                                            <span data-count="0" class="white"></span>
+                                            <img src="images/comment.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>              
+                            <p class="mt2">
+                                Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.
+                                Quisque volutpat augue enim, 
+                                pulvinar lobortis nibh lacinia at. Vestibulum.
+                            </p>
+                            <a href="#" class="btn btn--small mt2">See full article</a>
+                        </div>
+                    </div>
+                    <div class="w-33">
+                        <div class="thumbnail">
+                            <div class="thumbnail__image">
+                                    <img src="images/osaka-square.jpg" alt="" />
+                                <div class="thumbnail__actions justify-between">
+                                    <div>
+                                        <h3 class="p white text-uppercase">osaka</h3>
+                                    </div>
+                                    <div>
+                                        <div class="action">
+                                            <span data-count="0" class="white"></span>
+                                            <img src="images/heart.svg" data-heart>
+                                        </div>
+                                        <div class="action">
+                                            <span data-count="0" class="white"></span>
+                                            <img src="images/comment.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>              
+                            <p class="mt2">
+                                Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.
+                                Quisque volutpat augue enim, 
+                                pulvinar lobortis nibh lacinia at. Vestibulum.
+                            </p>
+                            <a href="#" class="btn btn--small mt2">See full article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CTA -->
+    <section class="bg-overlay bg-overlay--primary flex justify-center align-center full-section mt4" style="background-image: url('images/video-teaser.jpg');">
+        <div class="text-center white">
+            <h2 class="h1">Ready for an adventure?<br/>So do we.</h2>
+            <a href="" class="btn btn--large mt4">Get started</a>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer bg-black">
         <div class="mw1 center">
-            <a href="#">
-                <img src="images/odigo-logo.svg" alt="">
-            </a>
-            <nav>
-                <ul class="ma0 pa0">
-                    <li class="white list">Company</li>
-                    <li class="white list">About</li>
-                    <li class="white list">Team</li>
-                    <li class="white list">Careers</li>
-                    <li class="white list">Privacy Policy</li>
-                    <ul class="ma0 pa0">
-                        <li class="white list">App</li>
-                        <li class="white list">Feature</li>
-                        <li class="white list">Pricing</li>
-                        <li class="white list">Help Center</li>
+            <div class="flex">
+                <div class="w-33">
+                    <a href="#">
+                        <img src="images/odigo-logo.svg" alt="">
+                    </a>
+                    <ul class="ma0 pa0 list flex mt2 footer__socials">
+                        <li><a href="#" target="_blank"><img src="images/facebook.svg" alt="" /></a></li>
+                        <li><a href="#" target="_blank"><img src="images/twitter.svg" alt="" /></a></li>
+                        <li><a href="#" target="_blank"><img src="images/instagram.svg" alt="" /></a></li>
+                        <li><a href="#" target="_blank"><img src="images/youtube.svg" alt="" /></a></li>
                     </ul>
-                </ul>
-            </nav>
+                </div>
+                <div class="w-17">
+                    <h4 class="h4 white">Company</h4>
+                    <nav>
+                        <ul class="ma0 pa0 list mt1 p">
+                            <li><a href="#" class="white no-underline">About</a></li>
+                            <li><a href="#" class="white no-underline">Contact</a></li>
+                            <li><a href="#" class="white no-underline">Careers</a></li>
+                            <li><a href="#" class="white no-underline">Privacy policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="w-17">
+                    <h4 class="h4 white">App</h4>
+                    <nav>
+                        <ul class="ma0 pa0 list mt1 p">
+                            <li><a href="#" class="white no-underline">Features</a></li>
+                            <li><a href="#" class="white no-underline">Pricing</a></li>
+                            <li><a href="#" class="white no-underline">Help center</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="w-33">
+                    <h4 class="h4 white">Newsletter</h4>
+                    <p class="p white mt1">
+                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend la.
+                    </p>
+                    <form action="" class="mt1">
+                        <div class="flex">
+                            <div class="input">
+                                <label>Enter your email</label>
+                                <input type="email" class="mt1" required>
+                            </div>
+                            <button class="btn btn--small mt1">Get Started</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- JS -->
     <script src="./index.js"></script>
 </body>
 </html>
