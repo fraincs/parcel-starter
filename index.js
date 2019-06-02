@@ -1,24 +1,21 @@
 import './sass/main.scss';
 
-/*const manageLikes = () => {
-    let likes = document.querySelector("[data-likes]");
-    likes.innerHTML = likes.dataset.likes;
+const manageLikes = () => {
+    let likeButtons = document.querySelectorAll(".action--like");
+
+    likeButtons.forEach((likeButton) => {
+        likeButton.addEventListener('click', function() {
+            if(!this.classList.contains('is-liked')) {
+                this.classList.add("is-liked");
+                let currentCount = parseInt(this.firstChild.nextSibling.dataset.count);
+                this.firstChild.nextSibling.dataset.count = currentCount + 1;
+            } else {
+                this.classList.remove("is-liked");
+                let currentCount = parseInt(this.firstChild.nextSibling.dataset.count);
+                this.firstChild.nextSibling.dataset.count = currentCount - 1;
+            }      
+        })
+    });
 }
 
 manageLikes();
-
-const manageComments = () => {
-    let comments = document.querySelector("[data-comments]");
-    comments.innerHTML = comments.dataset.comments;
-}
-
-manageComments();*/
-
-let buttons = document.querySelectorAll(".action");
-
-buttons.forEach((button) => {
-    button.addEventListener('click', function() {
-        let currentCount = parseInt(this.firstChild.nextSibling.dataset.count);
-        this.firstChild.nextSibling.dataset.count = currentCount + 1;
-    })
-});

@@ -1,6 +1,7 @@
 // Form field
 .input {
-    width: 100%;
+    flex-grow: 1;
+    margin-right: $gutter-width * 3;
 
     label {
         font-size: $base-font-size;
@@ -16,5 +17,11 @@
         outline: 0;
         color: white;
         width: 100%;
+        position: relative;
+        transition: border-color 240ms ease;
+
+        &:focus {
+            border-color: $primary-color;
+        }
     }
 }

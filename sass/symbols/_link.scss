@@ -16,5 +16,12 @@
         top: 50%;
         right: 0;
         transform: translateY(-50%);
+        transition: 240ms transform ease;    
+    }
+
+    &:hover {
+        &::after {
+            transform: translate3d(-$gutter-width, -50%, 0);
+        }
     }
 }

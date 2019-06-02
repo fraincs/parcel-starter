@@ -1,4 +1,4 @@
-// Overlays utilities
+// Overlay
 .bg-overlay {
     position: relative;
 
@@ -10,13 +10,27 @@
         z-index: 0;
         width: 100%;
         height: 100%;
+        transition: 240ms opacity;
     }
 
     > * {
         position: relative;
         z-index: 1;
     }
-}  
+} 
+
+.bg-overlay--link {
+    display: block;
+    overflow: hidden;
+    margin: $gutter-width / 2;
+    background-size: cover;
+
+    &:hover {
+        &::before {
+            opacity: .75;
+        }
+    }
+}
 
 .bg-overlay--primary {
     &::before {
@@ -40,5 +54,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: $gutter-width * 3;
+    padding: $gutter-width;
+    @media screen and (min-width: $sm-breakpoint) {
+        padding: $gutter-width * 3;
+    }
 }

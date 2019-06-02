@@ -16,20 +16,24 @@ $base-line-height: 24px;
 $primary-font-family: 'Lato', sans-serif;
 
 // Colors
-$primary-color: #1B7DFF;
+$primary-color: #1B7dff;
 $secondary-color: #102746;
 $white-color: #fff;
 $black-color: #000;
 
 // Gradients
-$primary-gradient: linear-gradient(274.65deg, rgba(53, 66, 103, 0.0001) 23.56%, #151824 86.3%);
+$primary-gradient: linear-gradient(274.65deg, rgba(53, 66, 103, .0001) 23.56%, #151824 86.3%);
 
 // Overlays
-$primary-overlay: rgba(21, 24, 36, 0.6);
-$secondary-overlay: rgba(21, 24, 36, 0.4);
+$primary-overlay: rgba(21, 24, 36, .6);
+$secondary-overlay: rgba(21, 24, 36, .4);
 
 //Shadows
-$primary-box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.16);
+$primary-box-shadow: 0px 2px 20px rgba(21, 24, 36, .16);
 
 //Gutter
 $gutter-width: 10px;
+
+//Breakpoints
+$sm-breakpoint: 767px;
+$md-breakpoint: 1160px;

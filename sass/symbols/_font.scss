@@ -9,31 +9,47 @@ p {
 }
 
 %h1 {
-    font-size: $h1-font-size;
-    line-height: $h1-line-height;
+    font-size: $h1-font-size *.75;
+    line-height: $h1-line-height *.75;
     margin: 0;
     padding: 0;
+    @media screen and (min-width: $sm-breakpoint) {
+        font-size: $h1-font-size;
+        line-height: $h1-line-height;
+    }
 }
 
 %h2 {
-    font-size: $h2-font-size;
-    line-height: $h2-line-height;
+    font-size: $h2-font-size *.75;
+    line-height: $h2-line-height *.75;
     margin: 0;
     padding: 0;
+    @media screen and (min-width: $sm-breakpoint) {
+        font-size: $h2-font-size;
+        line-height: $h2-line-height;
+    }
 }
 
 %h3 {
-    font-size: $h3-font-size;
-    line-height: $h3-line-height;
+    font-size: $h3-font-size *.75;
+    line-height: $h3-line-height *.75;
     margin: 0;
     padding: 0;
+    @media screen and (min-width: $sm-breakpoint) {
+        font-size: $h3-font-size;
+        line-height: $h3-line-height;
+    }
 }
 
 %h4 {
-    font-size: $h4-font-size;
-    line-height: $h4-line-height;
+    font-size: $h4-font-size *.9;
+    line-height: $h4-line-height *.9;
     margin: 0;
     padding: 0;
+    @media screen and (min-width: $sm-breakpoint) {
+        font-size: $h4-font-size;
+        line-height: $h4-line-height;
+    }
 }
 
 %p {

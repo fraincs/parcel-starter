@@ -1,10 +1,29 @@
 // Section
 section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: $gutter-width * 3;
+    padding-bottom: $gutter-width * 3;
+        
+    @media screen and (min-width: $sm-breakpoint) {
+        padding-top: $gutter-width * 5;
+        padding-bottom: $gutter-width * 5;
+    }
 }
 
 .full-section {
-    min-height: 525px;
     background-size: cover;
+    padding-top: $gutter-width * 5;
+    padding-bottom: $gutter-width * 5;
+    @media screen and (min-width: $sm-breakpoint) {
+        min-height: 525px;
+    }
+}
+
+.alternate-section {
+    padding: 10px;
+}
+
+.offset-section {
+    @media screen and (min-width: $sm-breakpoint) {
+        transform: translateY(-50%);
+    }
 }

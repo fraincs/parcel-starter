@@ -1,4 +1,4 @@
-// Widths utilities
+// Width utilities
 .w-100 {
     width: 100%;
 }
@@ -9,21 +9,21 @@
 
 .w-66 {
     width: 100%;
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: $sm-breakpoint) {
         width: 66.66%;
     }
 }
 
 .w-50 {
     width: 100%;
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: $sm-breakpoint) {
         width: 50%;
     }
 }
 
 .w-33 {
     width: 100%;
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: $sm-breakpoint) {
         width: 33.33%;
     }
 }
@@ -34,7 +34,7 @@
 
 .w-17 {
     width: 100%;
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: $sm-breakpoint) {
         width: 16.67%;
     }
 }

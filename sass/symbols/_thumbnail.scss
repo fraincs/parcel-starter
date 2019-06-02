@@ -1,4 +1,18 @@
 // Thumbnail
+.thumbnail {
+    margin-top: $gutter-width * 3;
+
+    @media screen and (min-width: $sm-breakpoint) {
+        margin-left: $gutter-width;
+        margin-right: $gutter-width;
+    }
+
+    @media screen and (min-width: $md-breakpoint) {
+        margin-left: $gutter-width * 3;
+        margin-right: $gutter-width * 3;
+    }
+}
+
 .thumbnail__image {
     position: relative;
     padding-bottom: 100%;

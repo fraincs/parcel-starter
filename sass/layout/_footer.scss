@@ -1,8 +1,8 @@
 // Footer
 .footer {
     background: black;
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: $gutter-width * 4;
+    padding-bottom: $gutter-width * 7;
 }
 
 .footer__socials {

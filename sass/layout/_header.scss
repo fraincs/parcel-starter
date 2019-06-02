@@ -10,7 +10,20 @@
 }
 
 .header__nav {
+    display: flex;
+    
     li {
-        margin-left: $gutter-width * 4;
+        margin-left: $gutter-width * 2;
+
+        &:last-child {
+            display: none;
+        }
+        @media screen and (min-width: $sm-breakpoint) {
+            margin-left: $gutter-width * 4;
+            
+            &:last-child {
+                display: block;
+            }            
+        }
     }
 }
