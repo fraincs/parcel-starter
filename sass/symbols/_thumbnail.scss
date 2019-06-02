@@ -1,0 +1,45 @@
+// Thumbnail
+.thumbnail {
+    margin-top: $gutter-width * 3;
+
+    @media screen and (min-width: $sm-breakpoint) {
+        margin-left: $gutter-width;
+        margin-right: $gutter-width;
+    }
+
+    @media screen and (min-width: $md-breakpoint) {
+        margin-left: $gutter-width * 3;
+        margin-right: $gutter-width * 3;
+    }
+}
+
+.thumbnail__image {
+    position: relative;
+    padding-bottom: 100%;
+
+    > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.thumbnail__actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: $primary-overlay;
+    padding: $gutter-width;
+
+    > div {
+        display: flex;
+    }
+
+    img {
+        display: inline-block;
+    }
+}

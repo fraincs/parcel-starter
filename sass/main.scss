@@ -1,0 +1,31 @@
+// Variables
+@import './_variables.scss';
+
+// Layout
+@import './layout/_header.scss';
+@import './layout/_hero.scss';
+@import './layout/_section.scss';
+@import './layout/_footer.scss';
+
+// Symbols
+@import './symbols/_action.scss';
+@import './symbols/_font.scss';
+@import './symbols/_benefit.scss';
+@import './symbols/_btn.scss';
+@import './symbols/_form-field.scss';
+@import './symbols/_link.scss';
+@import './symbols/_overlay.scss';
+@import './symbols/_thumbnail.scss';
+
+// Utilities
+@import './utilities/_colors.scss';
+@import './utilities/_flex.scss';
+@import './utilities/_image.scss';
+@import './utilities/_shadow.scss';
+@import './utilities/_spacings.scss';
+@import './utilities/_text.scss';
+@import './utilities/_width.scss';
+
+* {
+    box-sizing: border-box;
+}

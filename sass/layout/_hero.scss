@@ -1,0 +1,9 @@
+// Hero
+.hero {
+    background-image: url("../images/city.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: $gutter-width * 10;
+    padding-bottom: $gutter-width * 10;
+}

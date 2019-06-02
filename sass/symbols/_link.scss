@@ -1,0 +1,27 @@
+// Link
+.link {
+    color: $primary-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 53px;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 33px;
+        height: 8px;
+        background-image: url('../images/arrow.svg');
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        transition: 240ms transform ease;    
+    }
+
+    &:hover {
+        &::after {
+            transform: translate3d(-$gutter-width, -50%, 0);
+        }
+    }
+}

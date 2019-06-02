@@ -1,0 +1,37 @@
+// Action
+.action {
+    margin-left: $gutter-width;
+    cursor: pointer;
+
+    span {
+        margin-right: $gutter-width / 2;
+        &::before {
+            content: attr(data-count);
+        }
+    }
+}
+
+.action--like {
+    position: relative;
+    
+    &::after {
+        content: '';
+        background-image: url('../images/heart-selected.svg');
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) scale3d(1.75, 1.75, 1.75);
+        right: 0;
+        z-index: 2;
+        opacity: 0;
+        transition: transform 240ms ease, opacity 240ms ease;
+    }
+
+    &.is-liked {
+        &::after {
+            opacity: 1;
+            transform: translateY(-50%) scale3d(1.1, 1.1, 1.1);
+        }
+    }
+}
